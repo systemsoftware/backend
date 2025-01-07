@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/firebase.js"></script>
+  </head>
+
+  <div>
+    <h1>Refreshing your session...</h1>
+    <p>If you are not redirected in 5 seconds, click <a id="redir" href="/">here</a>.</p>
+  </div>
+
+  <script>
+    document.getElementById('redir').href = decodeURIComponent(new URLSearchParams(window.location.search).get('redirect') || '/')
+    setTimeout(() => {
+        location = decodeURIComponent(new URLSearchParams(window.location.search).get('redirect') || '/')
+    }, 1500);
+  </script>

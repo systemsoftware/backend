@@ -1,0 +1,7 @@
+body{
+    background-color: BACKGROUND_COLOR;
+}
+
+* {
+    color: TEXT_COLOR;
+}
