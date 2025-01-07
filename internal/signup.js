@@ -16,7 +16,7 @@ router.post('/signup', async (req, res) => {
       email: req.body.email,
       password: req.body.pass,
       displayName: req.body.name,
-      photoURL:`https://raw.githubusercontent.com/PartySocial/images/main/partysocial.png`
+      photoURL:`https://ui-avatars.com/api/?name=${encodeURIComponent(req.body.name)}`
   })
 
   res.status(201).send({ success: true, user: user.toJSON() })
