@@ -1,11 +1,4 @@
-const FIREBASE_CONFIG = {
-  apiKey: "AIzaSyCCBWTdPF-GAuHF7L2A8yj4V1qwNP9WkKI",
-  authDomain: "friends-908f0.firebaseapp.com",
-  projectId: "friends-908f0",
-  storageBucket: "friends-908f0.firebasestorage.app",
-  messagingSenderId: "829065139561",
-  appId: "1:829065139561:web:654988877b8fe372ef19f8"
-}
+const FIREBASE_CONFIG = {}
 
 firebase.initializeApp(FIREBASE_CONFIG);
 
